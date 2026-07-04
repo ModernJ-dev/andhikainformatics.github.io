@@ -41,7 +41,7 @@
       <h1 id="welcome-title">loading...</h1>
 			<p id="welcome-subtext"></p>
 			<button type="button" id="surprise-btn" onclick="toggleSurprise()">???</button>
-			<p id="surprise-text" style="display:none; cursor:pointer; font-size:12px;" onclick="openRickroll()">Open me for a funny suprise</p>
+			<p id="surprise-text" style="display:none; cursor:pointer; font-size:12px;" onclick="openSurprise()">Open me for a funny suprise</p>
 			<!-- used to say yoga here, now javascript does it -->
 		</div>
 		<img src="images/lady-in-yoga.jpg" alt="lady doing yoga" class='figure'>
@@ -65,19 +65,9 @@
 	// welcome page javascript - only for index
 	var siteName = "Andhika's Content Library";
 	var subtext = "the most random in real life shenanigans";
-	var greeting = "";
-
-	var hour = new Date().getHours();
-	if (hour < 12) {
-		greeting = "Good morning! ";
-	} else if (hour < 18) {
-		greeting = "Good afternoon! ";
-	} else {
-		greeting = "Good evening! ";
-	}
 
 	document.getElementById("welcome-title").innerHTML = siteName;
-	document.getElementById("welcome-subtext").innerHTML = greeting + subtext;
+	document.getElementById("welcome-subtext").innerHTML = subtext;
 	document.getElementById("welcome-subtext").style.fontSize = "16px";
 	document.getElementById("welcome-subtext").style.color = "#315f52";
 
@@ -86,53 +76,14 @@
 	console.log("welcome page loaded");
 
 	function toggleSurprise() {
-		var popup = document.getElementById("rickroll-popup");
-		if (popup) {
-			document.body.removeChild(popup);
-			console.log("rickroll popup closed");
-			return;
-		}
-
 		document.getElementById("surprise-text").style.display = "block";
 		document.getElementById("surprise-text").style.fontSize = "12px";
 		console.log("surprise text shown");
 	}
 
-	function openRickroll() {
-		if (document.getElementById("rickroll-popup")) {
-			return;
-		}
-
-		var popup = document.createElement("div");
-		popup.id = "rickroll-popup";
-		popup.style.position = "fixed";
-		popup.style.top = "0";
-		popup.style.left = "0";
-		popup.style.width = "100%";
-		popup.style.height = "100%";
-		popup.style.backgroundColor = "black";
-		popup.style.zIndex = "9999";
-		popup.style.textAlign = "center";
-		popup.style.paddingTop = "50px";
-
-		var closeBtn = document.createElement("button");
-		closeBtn.innerHTML = "close";
-		closeBtn.onclick = function() {
-			document.body.removeChild(popup);
-		};
-
-		var video = document.createElement("video");
-		video.src = "rickroll.mp4";
-		video.controls = true;
-		video.autoplay = true;
-		video.style.width = "600px";
-
-		popup.appendChild(closeBtn);
-		popup.appendChild(document.createElement("br"));
-		popup.appendChild(video);
-		document.body.appendChild(popup);
-
-		console.log("rickroll popup opened");
+	function openSurprise() {
+		window.open("https://youtu.be/dQw4w9WgXcQ?si=788gVHDInHfzRz5F", "_blank");
+		console.log("opened surprise link");
 	}
 	</script>
 </body>
