@@ -38,11 +38,9 @@
 	</div>
 	<div id="body">
 		<div id="tagline">
-      <h1>Andhika's Content Library</h1>
-			<p style="font-size: 16px; color: #315f52;">
-				the most random in real life shenanigans
-			</p>
-			<!-- used to say yoga here -->
+      <h1 id="welcome-title">loading...</h1>
+			<p id="welcome-subtext"></p>
+			<!-- used to say yoga here, now javascript does it -->
 		</div>
 		<img src="images/lady-in-yoga.jpg" alt="lady doing yoga" class='figure'>
 	</div>
@@ -60,5 +58,30 @@
 			<a href="https://freewebsitetemplates.com/go/pinterest/" id="pinterest" target="_blank">Pinterest</a>
 		</div>
 	</div>
+
+	<script type="text/javascript">
+	// welcome page javascript - only for index
+	var siteName = "Andhika's Content Library";
+	var subtext = "the most random in real life shenanigans";
+	var greeting = "";
+
+	var hour = new Date().getHours();
+	if (hour < 12) {
+		greeting = "Good morning! ";
+	} else if (hour < 18) {
+		greeting = "Good afternoon! ";
+	} else {
+		greeting = "Good evening! ";
+	}
+
+	document.getElementById("welcome-title").innerHTML = siteName;
+	document.getElementById("welcome-subtext").innerHTML = greeting + subtext;
+	document.getElementById("welcome-subtext").style.fontSize = "16px";
+	document.getElementById("welcome-subtext").style.color = "#315f52";
+
+	document.title = siteName;
+
+	console.log("welcome page loaded");
+	</script>
 </body>
 </html>
