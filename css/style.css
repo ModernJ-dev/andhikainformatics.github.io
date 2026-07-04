@@ -1,11 +1,19 @@
 /* Template by freewebsitetemplates.com */
+/* my css for informatics class project */
+/* colors: dee0ce, ffffff, 485475 */
+
 body {
-	background: #077054;
-	color: #315f52;
+	background: #DEE0CE;
+	color: #485475;
 	font-family: 'latoregular';
 	font-size: 14px;
 	margin: 0;
 	padding: 0;
+}
+
+/* main page background color */
+body {
+	background-color: #dee0ce;
 }
 @font-face {
 	font-family: 'latoregular';
@@ -38,10 +46,10 @@ p {
 	margin: 0;
 }
 p a {
-	color: #315f52;
+	color: #485475;
 }
 p a:hover {
-	color: #451374;
+	color: #485475;
 }
 #header {
 	margin: 0 auto;
@@ -56,11 +64,11 @@ p a:hover {
 	text-align: center;
 }
 #header h1 a {
-	color: #99fa99;
+	color: #485475;
 	text-decoration: none;
 }
 #header h1 a span {
-	color: #b6d8cf;
+	color: #485475;
 	display: block;
 	font-family: 'nixie_oneregular';
 	font-size: 26px;
@@ -78,7 +86,7 @@ p a:hover {
 	position: relative;
 }
 #header ul#navigation li a {
-	color: #b6d8cf;
+	color: #485475;
 	font-size: 18px;
 	padding: 0 46px;
 	text-align: center;
@@ -87,10 +95,12 @@ p a:hover {
 }
 #header ul#navigation li a:hover,
 #header ul#navigation li.current ul li a:hover {
-	color: #d3a3ff;
+	color: #FFFFFF;
+	background: #485475;
 }
 #header ul#navigation li.current a {
-	color: #99fa99;
+	color: #485475;
+	background: #FFFFFF;
 }
 #header ul#navigation li ul {
 	display: none;
@@ -105,7 +115,7 @@ p a:hover {
 	display: block;
 }
 #header ul#navigation li ul li {
-	background: #077054;
+	background: #DEE0CE;
 	display: block;
 	height: 46px;
 	line-height: 46px;
@@ -114,18 +124,22 @@ p a:hover {
 	padding: 0 20px;
 }
 #header ul#navigation li.current ul li a {
-	color: #b6d8cf;
+	color: #485475;
 }
 #body {
-	background: #ffffff;
+	background: #fff;
 	margin: 1px auto 0;
 	max-width: 880px;
 	min-height: 827px;
 	overflow: hidden;
 	padding: 45px 40px 46px;
 }
+/* white main content area */
+#body {
+	background-color: #FFFFFF;
+}
 #body > h2 {
-	color: #21a51e;
+	color: #485475;
 	font-family: 'nixie_oneregular';
 	font-size: 35px;
 	font-weight: normal;
@@ -145,9 +159,45 @@ p a:hover {
 	margin: 110px 0 0 25px;
 	max-width: 510px;
 }
+
+/* my custom css for index page welcome box */
+#welcome-box {
+	background-color: #FFFFFF;
+	border: 4px solid #485475;
+	border-radius: 10px;
+	padding: 25px;
+	margin-bottom: 20px;
+}
+#name-box {
+	background-color: #DEE0CE;
+	border: 3px dashed #485475;
+	padding: 20px;
+	margin: 20px 0;
+	clear: both;
+}
+#name-box input {
+	font-size: 16px;
+	padding: 8px;
+	border: 2px solid #485475;
+	width: 200px;
+}
+#name-box button {
+	background: #485475;
+	color: #FFFFFF;
+	padding: 8px 15px;
+	border: none;
+	cursor: pointer;
+	font-size: 14px;
+}
+#greeting-result {
+	font-size: 22px;
+	color: #485475;
+	font-weight: bold;
+	margin-top: 15px;
+}
 #body div#tagline h1 {
 	background: url(../images/bg-separator.png) no-repeat center bottom;
-	color: #21a51e;
+	color: #485475;
 	font-family: 'nixie_oneregular';
 	font-size: 100px;
 	font-weight: normal;
@@ -158,7 +208,7 @@ p a:hover {
 	text-transform: uppercase;
 }
 #body div#tagline p {
-	color: #21a51e;
+	color: #485475;
 	font-family: 'nixie_oneregular';
 	font-size: 100px;
 	line-height: 100px;
@@ -239,9 +289,9 @@ p a:hover {
 	padding: 0 0 5px
 }
 #body form label input {
-	background: #d1d3d4;
-	border: 1px solid #b6d8cf;
-	color: #315f52;
+	background: #FFFFFF;
+	border: 1px solid #DEE0CE;
+	color: #485475;
 	display: block;
 	font-family: 'latoregular';
 	font-size: 14px;
@@ -251,9 +301,9 @@ p a:hover {
 	width: 448px;
 }
 #body form label textarea {
-	background: #d1d3d4;
-	border: 1px solid #b6d8cf;
-	color: #315f52;
+	background: #FFFFFF;
+	border: 1px solid #DEE0CE;
+	color: #485475;
 	display: block;
 	font-family: 'latoregular';
 	font-size: 14px;
@@ -265,10 +315,10 @@ p a:hover {
 	width: 448px;
 }
 #body form input#send {
-	background: #077054;
+	background: #485475;
 	border: none;
 	border-radius: 5px;
-	color: #99fa99;
+	color: #FFFFFF;
 	cursor: pointer;
 	font-family: 'latoregular';
 	font-size: 14px;
@@ -278,8 +328,8 @@ p a:hover {
 	width: 50px;
 }
 #body form input#send:hover {
-	background: #d3a3ff;
-	color: #000000;
+	background: #DEE0CE;
+	color: #485475;
 }
 #body ul.blog {
 	list-style: none;
@@ -306,7 +356,7 @@ p a:hover {
 }
 #body ul.blog li h3 a,
 #body div.content div.sidebar ul li h4 a {
-	color: #315f52;
+	color: #485475;
 	text-decoration: none;
 }
 #body ul.blog li h3 a:hover,
@@ -340,7 +390,7 @@ p a:hover {
 	padding: 20px 0 0;
 }
 #body div.content div.sidebar ul li {
-	border-top: 1px solid #88b4a8;
+	border-top: 1px solid #DEE0CE;
 	float: none;
 	margin: 0;
 	padding: 18px 0 28px;
@@ -358,60 +408,45 @@ p a:hover {
 	margin: 0 auto;
 	max-width: 960px;
 	overflow: hidden;
-	padding: 30px 0 60px;
+	padding: 20px 0;
+	background-color: #DEE0CE;
+	border-top: 2px solid #485475;
 }
 #footer div {
-	float: left;
-	width: 500px;
+	float: none;
+	width: auto;
 }
 #footer div span {
-	color: #99fa99;
+	color: #485475;
 	display: block;
-	font-size: 26px;
-	line-height: 24px;
+	font-size: 18px;
+	font-weight: bold;
 }
 #footer div p {
-	color: #b6d8cf;
-	font-size: 12px;
-	line-height: 30px;
+	color: #485475;
+	font-size: 14px;
+	line-height: 20px;
 }
+
+/* footer stuff */
+#footer {
+	background-color: #DEE0CE !important;
+	text-align: center;
+}
+#footer div {
+	float: none;
+	width: auto;
+}
+
+/* old social icon css i deleted the html for this
 #footer div#connect {
 	float: right;
 	overflow: hidden;
 	width: auto;
 }
-#footer div#connect a {
-	background: url(../images/icons.png) no-repeat;
-	display: block;
-	float: left;
-	text-indent: -99999px;
-}
-#footer div#connect a#facebook {
-	background-position: 0 0;
-	height: 30px;
-	width: 16px;
-}
-#footer div#connect a#twitter {
-	background-position: 0 -30px;
-	height: 30px;
-	margin: 0 0 0 28px;
-	width: 37px;
-}
-#footer div#connect a#googleplus {
-	background-position: 0 -61px;
-	height: 32px;
-	margin: 0 0 0 19px;
-	width: 32px;
-}
-#footer div#connect a#googleplus {
-	background-position: 0 -61px;
-	height: 32px;
-	margin: 0 0 0 19px;
-	width: 32px;
-}
-#footer div#connect a#pinterest {
-	background-position: 0 -94px;
-	height: 30px;
-	margin: 0 0 0 23px;
-	width: 30px;
+*/
+
+/* not sure what this does but leaving it */
+#header h1 a {
+	color: #485475;
 }

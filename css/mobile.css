@@ -1,4 +1,6 @@
 /* Website template by freewebsitetemplates.com */
+/* mobile css - for phones */
+
 @media only screen and (max-width : 918px) {
 	html {
 		-webkit-text-size-adjust: none;
@@ -17,7 +19,7 @@
 	}
 	#header ul#navigation {
 		background: url(../images/mobile/bg-mobile.png);
-		border: 1px solid #99fa99;
+		border: 1px solid #DEE0CE;
 		display: none;
 		font-size: 1.5625em;
 		height: auto;
@@ -48,7 +50,7 @@
 	}
 	#header ul#navigation li a {
 		background: none;
-		border-top: 1px solid #99fa99;
+		border-top: 1px solid #DEE0CE;
 		color: #ffffff;
 		display: block;
 		font-family: Arial;
@@ -62,8 +64,8 @@
 	}
 	#header ul#navigation li span {
 		background: transparent url(../images/mobile/mobile-expand.png) no-repeat;
-		border-left: 1px solid #99fa99;
-		border-top: 1px solid #99fa99;
+		border-left: 1px solid #DEE0CE;
+		border-top: 1px solid #DEE0CE;
 		display: block;
 		height: 49px;
 		position: absolute;
@@ -81,8 +83,8 @@
 	#header ul#navigation li a:hover,
 	#header ul#navigation li.current ul li a:hover,
 	#header ul#navigation li.current a {
-		background: rgba(153, 250, 153, 0.8);
-		color: #ffffff;
+		background: rgba(72, 84, 117, 0.8);
+		color: #FFFFFF;
 	}
 	#header ul#navigation > li:first-child > a {
 		border: none;
@@ -228,11 +230,6 @@
 		line-height: 1.65em;
 		padding: 20px 0 0;
 		text-align: center;
-	}
-	#footer div#connect {
-		float: none;
-		margin: 30px auto 0;
-		max-width: 185px;
 	}
 }
 @media screen
