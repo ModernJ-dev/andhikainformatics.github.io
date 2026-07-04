@@ -1,4 +1,6 @@
 /* Website template by freewebsitetemplates.com */
+/* mobile css - for phones */
+
 @media only screen and (max-width : 918px) {
 	html {
 		-webkit-text-size-adjust: none;

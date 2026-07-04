@@ -7,7 +7,7 @@
 	<meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Andhika's Content Library</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+  <link rel='stylesheet' href='css/mobile.css'>
 	<script type='text/javascript' src='js/mobile.js'></script>
 </head>
 <body>
@@ -20,9 +20,6 @@
 			<li>
 				<a href="links.html">Links</a>
 			</li>
-			<li>
-				<a href="instructors.html">Instructors</a>
-			</li>
 		</ul>
 	</div>
 	<div id="body">
@@ -33,6 +30,7 @@
 			<p id="surprise-text" style="display:none; cursor:pointer; font-size:12px;" onclick="openSurprise()">Open me for a funny suprise</p>
 			<!-- used to say yoga here, now javascript does it -->
 		</div>
+    <!-- insta pic -->
 		<a href="https://www.instagram.com/reel/Cz38g22Shwz/?igsh=MTBwbGRjaTJidTVhMg==" target="_blank">
 			<img src="images/frontpageinsta.jpeg" alt="my instagram reel" class='figure'>
 		</a>
@@ -68,7 +66,7 @@
 	function toggleSurprise() {
 		document.getElementById("surprise-text").style.display = "block";
 		document.getElementById("surprise-text").style.fontSize = "12px";
-		console.log("surprise text shown");
+		console.log("surprise text shown")
 	}
 
 	function openSurprise() {

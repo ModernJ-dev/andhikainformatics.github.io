@@ -1,4 +1,7 @@
 /* Template by freewebsitetemplates.com */
+/* my css for informatics class project */
+/* colors: dee0ce, ffffff, 485475 */
+
 body {
 	background: #DEE0CE;
 	color: #485475;
@@ -6,6 +9,11 @@ body {
 	font-size: 14px;
 	margin: 0;
 	padding: 0;
+}
+
+/* main page background color */
+body {
+	background-color: #dee0ce;
 }
 @font-face {
 	font-family: 'latoregular';
@@ -119,12 +127,16 @@ p a:hover {
 	color: #485475;
 }
 #body {
-	background: #ffffff;
+	background: #fff;
 	margin: 1px auto 0;
 	max-width: 880px;
 	min-height: 827px;
 	overflow: hidden;
 	padding: 45px 40px 46px;
+}
+/* white main content area */
+#body {
+	background-color: #FFFFFF;
 }
 #body > h2 {
 	color: #485475;
@@ -379,6 +391,11 @@ p a:hover {
 	font-size: 14px;
 	line-height: 20px;
 }
+
+/* footer stuff */
+#footer {
+	background-color: #DEE0CE !important;
+}
 #footer div#connect {
 	float: right;
 	overflow: hidden;
@@ -418,4 +435,9 @@ p a:hover {
 	height: 30px;
 	margin: 0 0 0 23px;
 	width: 30px;
+}
+
+/* not sure what this does but leaving it */
+#header h1 a {
+	color: #485475;
 }
