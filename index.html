@@ -23,13 +23,22 @@
 		</ul>
 	</div>
 	<div id="body">
-		<div id="tagline">
-      <h1 id="welcome-title">loading...</h1>
-			<p id="welcome-subtext"></p>
-			<button type="button" id="surprise-btn" onclick="toggleSurprise()">???</button>
-			<p id="surprise-text" style="display:none; cursor:pointer; font-size:12px;" onclick="openSurprise()">Open me for a funny suprise</p>
-			<!-- used to say yoga here, now javascript does it -->
+		<div id="welcome-box">
+			<div id="tagline">
+	      <h1 id="welcome-title">loading...</h1>
+				<p id="welcome-subtext"></p>
+				<button type="button" id="surprise-btn" onclick="toggleSurprise()">???</button>
+				<p id="surprise-text" style="display:none; cursor:pointer; font-size:12px;" onclick="openSurprise()">Open me for a funny suprise</p>
+			</div>
 		</div>
+
+		<div id="name-box">
+			<p><b>whats your name?</b></p>
+			<input type="text" id="visitor-name" placeholder="type your name here">
+			<button type="button" onclick="greetVisitor()">say hi to me</button>
+			<p id="greeting-result"></p>
+		</div>
+
     <!-- insta pic - frontpageinsta.jpeg -->
 		<a href="https://www.instagram.com/reel/Cz38g22Shwz/?igsh=MTBwbGRjaTJidTVhMg==" target="_blank">
 			<img src="images/frontpageinsta.jpeg" alt="Frontpageinsta" class='figure'>
@@ -59,6 +68,16 @@
 	document.title = siteName;
 
 	console.log("welcome page loaded");
+
+	function greetVisitor() {
+		var name = document.getElementById("visitor-name").value;
+		if (name == "") {
+			document.getElementById("greeting-result").innerHTML = "you forgot to type your name lol";
+		} else {
+			document.getElementById("greeting-result").innerHTML = "hey " + name + ", welcome to my content library!!";
+		}
+		console.log("greeted visitor");
+	}
 
 	function toggleSurprise() {
 		document.getElementById("surprise-text").style.display = "block";
