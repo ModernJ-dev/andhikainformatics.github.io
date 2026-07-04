@@ -1,62 +1,105 @@
 <!DOCTYPE html>
-<!-- Website template by freewebsitetemplates.com -->
 <html>
 <head>
-	<meta charset="UTF-8">
+<meta charset="UTF-8">
 	<meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Belle &amp; Carrie Rehabilitation Yoga Web Template</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/mobile.css">
-	<script type='text/javascript' src='js/mobile.js'></script>
+<title>Andhika's Content Library</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel='stylesheet' href='css/mobile.css'>
+<script type='text/javascript' src='js/mobile.js'></script>
 </head>
 <body>
-	<div id="header">
-		<h1><a href="index.html">Belle &amp; Carrie <span>Rehabilitation Yoga</span></a></h1>
-		<ul id="navigation">
-			<li class="current">
-				<a href="index.html">Home</a>
-			</li>
-			<li>
-				<a href="about.html">About</a>
-			</li>
-			<li>
-				<a href="classes.html">Classes</a>
-				<ul>
-					<li>
-						<a href="instructors.html">Instructors</a>
-					</li>
-				</ul>
-			</li>
-			<li>
-				<a href="contact.html">Contact</a>
-			</li>
-			<li>
-				<a href="blog.html">Blog</a>
-			</li>
-		</ul>
-	</div>
-	<div id="body">
-		<div id="tagline">
-			<h1>Yoga</h1>
-			<p>
-				For Better Health &amp; Flexibility
-			</p>
-		</div>
-		<img src="images/lady-in-yoga.jpg" alt="lady doing yoga" class="figure">
-	</div>
-	<div id="footer">
-		<div>
-			<span>123 St. City Location, Country | 987654321</span>
-			<p>
-				&copy; 2023 by Belle &amp; Carrie Rehabilitation Yoga. All rights reserved.
-			</p>
-		</div>
-		<div id="connect">
-			<a href="https://freewebsitetemplates.com/go/facebook/" id="facebook" target="_blank">Facebook</a>
-			<a href="https://freewebsitetemplates.com/go/twitter/" id="twitter" target="_blank">Twitter</a>
-			<a href="https://freewebsitetemplates.com/go/googleplus/" id="googleplus" target="_blank">Google&#43;</a>
-			<a href="https://freewebsitetemplates.com/go/pinterest/" id="pinterest" target="_blank">Pinterest</a>
-		</div>
-	</div>
+
+<div id="header">
+<h1><a href='index.html'>Andhika's Content Library</a></h1>
+<ul id="navigation">
+<li class="current"><a href="index.html">Home</a></li>
+<li>
+  <a href="links.html">Links</a>
+</li>
+</ul>
+</div>
+
+<div id="body">
+
+<div id="welcome-box">
+  <div id="tagline">
+    <h1 id="welcome-title">loading...</h1>
+    <p id="welcome-subtext"></p>
+    <br>
+    <button type="button" id="surprise-btn" onclick="toggleSurprise()">???</button>
+    <p id="surprise-text" style="display:none; cursor:pointer; font-size:12px;" onclick="openSurprise()">Open me for a funny suprise</p>
+  </div>
+</div>
+
+<!-- name input thing for class assignment -->
+<div id="name-box">
+<p><b>whats your name?</b></p>
+<input type="text" id="visitor-name" placeholder="type your name here" style="border:2px solid #485475;">
+<br><br>
+<button type="button" onclick="greetVisitor()">say hi to me</button>
+<p id="greeting-result"></p>
+</div>
+
+<div>
+<!-- insta pic -->
+<a href="https://www.instagram.com/reel/Cz38g22Shwz/?igsh=MTBwbGRjaTJidTVhMg==" target="_blank">
+<img src="images/frontpageinsta.jpeg" alt="Frontpageinsta" class='figure' border="0">
+</a>
+</div>
+
+<center>
+<p style="font-size: 20px; color: #485475;">come check out my best work!</p>
+</center>
+
+<p style="font-size: 12px; text-align: center; margin-top: 40px;">
+<a href="https://modernj-dev.github.io/originaltemplateweb.github.io/" target="_blank">original template source</a>
+</p>
+
+</div>
+
+<div id="footer" style="text-align:center;">
+<div>
+<span>Andhika Pratama Wichaksana</span>
+<p>25229508</p>
+</div>
+</div>
+
+<script type="text/javascript">
+// welcome page javascript - only for index
+var siteName = "Andhika's Content Library";
+var subtext = "the most random in real life shenanigans";
+
+document.getElementById("welcome-title").innerHTML = siteName;
+document.getElementById("welcome-subtext").innerHTML = subtext;
+document.getElementById("welcome-subtext").style.fontSize = "16px";
+document.getElementById("welcome-subtext").style.color = "#485475";
+
+document.title = siteName;
+
+console.log("welcome page loaded");
+
+function greetVisitor() {
+	var name = document.getElementById("visitor-name").value;
+	if (name == "") {
+		document.getElementById("greeting-result").innerHTML = "you forgot to type your name lol";
+	} else {
+		document.getElementById("greeting-result").innerHTML = "hey " + name + ", welcome to my content library!!";
+	}
+	console.log("greeted visitor");
+}
+
+function toggleSurprise() {
+	document.getElementById("surprise-text").style.display = "block";
+	document.getElementById("surprise-text").style.fontSize = "12px";
+	console.log("surprise text shown")
+}
+
+function openSurprise() {
+	window.open("https://youtu.be/dQw4w9WgXcQ?si=788gVHDInHfzRz5F", "_blank");
+	console.log("opened surprise link");
+}
+</script>
+
 </body>
 </html>
